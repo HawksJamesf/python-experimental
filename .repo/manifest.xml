@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="STS001"
+      fetch="git@10.0.30.8:"
+           review="10.0.30.8:8080" />
+  <default revision="PDU1"
+           remote="STS001" 
+           sync-j="4" />
+
+  <project path="build" name="GR6737T_65_LE_N_SW1/platform/build" groups="pdk,tradefed" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="abi/cpp" name="GR6737T_65_LE_N_SW1/platform/abi/cpp" groups="pdk" />
+  <project path="art" name="GR6737T_65_LE_N_SW1/platform/art" groups="pdk" />
+  <project path="bionic" name="GR6737T_65_LE_N_SW1/platform/bionic" groups="pdk" />
+  <!-- <project path="bootable/bootloader" name="GR6737T_65_LE_N_SW1/platform/bootable/bootloader" groups="pdk" /> -->
+  <project path="bootable/recovery" name="GR6737T_65_LE_N_SW1/platform/bootable/recovery" groups="pdk" />
+  <project path="cts" name="GR6737T_65_LE_N_SW1/platform/cts" groups="cts,pdk-cw-fs" />
+  <project path="dalvik" name="GR6737T_65_LE_N_SW1/platform/dalvik" groups="pdk-cw-fs" />
+  <project path="developers/build" name="GR6737T_65_LE_N_SW1/platform/developers/build" />
+  <project path="developers/demos" name="GR6737T_65_LE_N_SW1/platform/developers/demos" />
+  <project path="developers/samples/android" name="GR6737T_65_LE_N_SW1/platform/developers/samples/android" />
+  <project path="development" name="GR6737T_65_LE_N_SW1/platform/development" groups="pdk-cw-fs" />
+  <project path="device/asus" name="GR6737T_65_LE_N_SW1/device/asus" />
+  <project path="device/common" name="GR6737T_65_LE_N_SW1/device/common" groups="pdk-cw-fs" />
+  <project path="device/generic" name="GR6737T_65_LE_N_SW1/device/generic" />
+  <project path="device/ginreen" name="GR6737T_65_LE_N_SW1/device/ginreen" />
+  <project path="device/google/accessory" name="GR6737T_65_LE_N_SW1/device/google/accessory" groups="device" />
+  <project path="device/google/atv" name="GR6737T_65_LE_N_SW1/device/google/atv" groups="device,fugu" />
+  <project path="device/google/contexthub" name="GR6737T_65_LE_N_SW1/device/google/contexthub"/>
+  <project path="device/google/dragon" name="GR6737T_65_LE_N_SW1/device/google/dragon"/>
+  <project path="device/google/dragon-kernel" name="GR6737T_65_LE_N_SW1/device/google/dragon-kernel"/>
+  <project path="device/htc/flounder" name="GR6737T_65_LE_N_SW1/device/htc/flounder" />
+  <project path="device/htc/flounder-kernel" name="GR6737T_65_LE_N_SW1/device/htc/flounder-kernel"/>
+  <project path="device/huawei/angler" name="GR6737T_65_LE_N_SW1/device/huawei/angler" />
+  <project path="device/huawei/angler-kernel" name="GR6737T_65_LE_N_SW1/device/huawei/angler-kernel" />
+  <project path="device/intel/edison" name="GR6737T_65_LE_N_SW1/device/intel/edison" />
+  <project path="device/lge/bullhead" name="GR6737T_65_LE_N_SW1/device/lge/bullhead" />
+  <project path="device/lge/bullhead-kernel" name="GR6737T_65_LE_N_SW1/device/lge/bullhead-kernel" />
+  <project path="device/linaro/hikey" name="GR6737T_65_LE_N_SW1/device/linaro/hikey" />
+  <project path="device/linaro/hikey-kernel" name="GR6737T_65_LE_N_SW1/device/linaro/hikey-kernel" />
+  <project path="device/mediatek" name="GR6737T_65_LE_N_SW1/device/mediatek" />
+  <project path="device/moto/shamu" name="GR6737T_65_LE_N_SW1/device/moto/shamu" groups="device,shamu" />
+  <project path="device/moto/shamu-kernel" name="GR6737T_65_LE_N_SW1/device/moto/shamu-kernel" groups="device,shamu" clone-depth="1" />
+  <project path="device/sample" name="GR6737T_65_LE_N_SW1/device/sample" groups="pdk" />
+  <!-- <project path="device/samsung/manta" name="GR6737T_65_LE_N_SW1/device/samsung/manta" groups="device,manta" /> -->
+  <project path="docs/source.android.com" name="GR6737T_65_LE_N_SW1/platform/docs/source.android.com" groups="pdk-cw-fs" />
+  <project path="external/aac" name="GR6737T_65_LE_N_SW1/platform/external/aac" groups="pdk" />
+  <project path="external/android-clat" name="GR6737T_65_LE_N_SW1/platform/external/android-clat" groups="pdk-cw-fs" />
+  <!--<project path="external/android-mock" name="GR6737T_65_LE_N_SW1/platform/external/android-mock" groups="pdk-cw-fs" />-->
+  <project path="external/androidplot" name="GR6737T_65_LE_N_SW1/platform/external/androidplot" groups="pdk-cw-fs" />
+  <project path="external/ant-glob" name="GR6737T_65_LE_N_SW1/platform/external/ant-glob" groups="pdk-cw-fs" />
+  <project path="external/antlr" name="GR6737T_65_LE_N_SW1/platform/external/antlr" groups="pdk-cw-fs,tradefed" />
+  <project path="external/apache-commons-math" name="GR6737T_65_LE_N_SW1/platform/external/apache-commons-math" groups="pdk-cw-fs" />
+  <project path="external/apache-harmony" name="GR6737T_65_LE_N_SW1/platform/external/apache-harmony" groups="pdk-cw-fs" />
+  <project path="external/apache-http" name="GR6737T_65_LE_N_SW1/platform/external/apache-http" groups="pdk-cw-fs" />
+  <project path="external/apache-xml" name="GR6737T_65_LE_N_SW1/platform/external/apache-xml" groups="pdk-cw-fs" />
+  <project path="external/archive-patcher" name="GR6737T_65_LE_N_SW1/platform/external/archive-patcher" groups="pdk-cw-fs" />
+  <project path="external/autotest" name="GR6737T_65_LE_N_SW1/platform/external/autotest" />
+  <project path="external/avahi" name="GR6737T_65_LE_N_SW1/platform/external/avahi" />
+  <project path="external/bison" name="GR6737T_65_LE_N_SW1/platform/external/bison" groups="pdk" />
+  <project path="external/blktrace" name="GR6737T_65_LE_N_SW1/platform/external/blktrace" groups="pdk-cw-fs" />
+  <!-- <project path="external/bluetooth" name="GR6737T_65_LE_N_SW1/platform/external/bluetooth" groups="pdk" /> -->
+  <project path="external/boringssl" name="GR6737T_65_LE_N_SW1/platform/external/boringssl" groups="pdk-cw-fs" />
+  <project path="external/bouncycastle" name="GR6737T_65_LE_N_SW1/platform/external/bouncycastle" groups="pdk" />
+  <project path="external/bsdiff" name="GR6737T_65_LE_N_SW1/platform/external/bsdiff" groups="pdk" />
+  <project path="external/bzip2" name="GR6737T_65_LE_N_SW1/platform/external/bzip2" groups="pdk" />
+  <project path="external/caliper" name="GR6737T_65_LE_N_SW1/platform/external/caliper" />
+  <project path="external/c-ares" name="GR6737T_65_LE_N_SW1/platform/external/c-ares" />
+  <project path="external/cblas" name="GR6737T_65_LE_N_SW1/platform/external/cblas" groups="pdk-cw-fs" />
+  <project path="external/ceres-solver" name="GR6737T_65_LE_N_SW1/platform/external/ceres-solver" groups="pdk-cw-fs" />
+  <!-- <project path="external/checkpolicy" name="GR6737T_65_LE_N_SW1/platform/external/checkpolicy" groups="pdk" /> -->
+  <project path="external/chromium-libpac" name="GR6737T_65_LE_N_SW1/platform/external/chromium-libpac" />
+  <project path="external/chromium-trace" name="GR6737T_65_LE_N_SW1/platform/external/chromium-trace" groups="pdk" />
+  <!-- <project path="external/chromium_org" name="GR6737T_65_LE_N_SW1/platform/external/chromium_org" /> -->
+  <project path="external/chromium-webview" name="GR6737T_65_LE_N_SW1/platform/external/chromium-webview" groups="pdk" />
+  <project path="external/clang" name="GR6737T_65_LE_N_SW1/platform/external/clang" groups="pdk" />
+  <project path="external/cmockery" name="GR6737T_65_LE_N_SW1/platform/external/cmockery" />
+  <project path="external/compiler-rt" name="GR6737T_65_LE_N_SW1/platform/external/compiler-rt" groups="pdk" />
+  <project path="external/conscrypt" name="GR6737T_65_LE_N_SW1/platform/external/conscrypt" groups="pdk-cw-fs" />
+  <project path="external/crcalc" name="GR6737T_65_LE_N_SW1/platform/external/crcalc" groups="pdk-cw-fs" />
+  <project path="external/cros" name="GR6737T_65_LE_N_SW1/platform/external/cros" />
+  <project path="external/curl" name="GR6737T_65_LE_N_SW1/platform/external/curl" />
+  <project path="external/dagger2" name="GR6737T_65_LE_N_SW1/platform/external/dagger2" />
+  <project path="external/dbus" name="GR6737T_65_LE_N_SW1/platform/external/dbus" />
+  <project path="external/dbus-binding-generator" name="GR6737T_65_LE_N_SW1/platform/external/dbus-binding-generator" /> 
+  <project path="external/deqp" name="GR6737T_65_LE_N_SW1/platform/external/deqp" />
+  <project path="external/dexmaker" name="GR6737T_65_LE_N_SW1/platform/external/dexmaker" groups="pdk-cw-fs" />
+  <project path="external/dhcpcd-6.8.2" name="GR6737T_65_LE_N_SW1/platform/external/dhcpcd-6.8.2" groups="pdk-cw-fs" />
+  <project path="external/dlmalloc" name="GR6737T_65_LE_N_SW1/platform/external/dlmalloc" />
+  <project path="external/dng_sdk" name="GR6737T_65_LE_N_SW1/platform/external/dng_sdk" />
+  <project path="external/dnsmasq" name="GR6737T_65_LE_N_SW1/platform/external/dnsmasq" groups="pdk" />
+  <project path="external/doclava" name="GR6737T_65_LE_N_SW1/platform/external/doclava" groups="pdk-cw-fs,tradefed" />
+  <project path="external/donuts" name="GR6737T_65_LE_N_SW1/platform/external/donuts" />
+  <project path="external/drm_gralloc" name="GR6737T_65_LE_N_SW1/platform/external/drm_gralloc" groups="pdk-cw-fs" />
+  <project path="external/drm_hwcomposer" name="GR6737T_65_LE_N_SW1/platform/external/drm_hwcomposer" groups="pdk-cw-fs" />
+  <project path="external/droiddriver" name="GR6737T_65_LE_N_SW1/platform/external/droiddriver" groups="pdk-cw-fs" />
+  <project path="external/e2fsprogs" name="GR6737T_65_LE_N_SW1/platform/external/e2fsprogs" groups="pdk" />
+  <project path="external/easymock" name="GR6737T_65_LE_N_SW1/platform/external/easymock" groups="pdk-cw-fs,tradefed" />
+  <project path="external/eclipse-basebuilder" name="GR6737T_65_LE_N_SW1/platform/external/eclipse-basebuilder" groups="pdk-cw-fs" />
+  <project path="external/eclipse-windowbuilder" name="GR6737T_65_LE_N_SW1/platform/external/eclipse-windowbuilder" groups="pdk-cw-fs" />
+  <project path="external/eigen" name="GR6737T_65_LE_N_SW1/platform/external/eigen" groups="pdk-cw-fs" />
+  <project path="external/elfutils" name="GR6737T_65_LE_N_SW1/platform/external/elfutils" groups="pdk" />
+  <!--<project path="external/embunit" name="GR6737T_65_LE_N_SW1/platform/external/embunit" groups="pdk" />-->
+  <project path="external/emma" name="GR6737T_65_LE_N_SW1/platform/external/emma" groups="pdk-cw-fs,tradefed" />
+  <project path="external/esd" name="GR6737T_65_LE_N_SW1/platform/external/esd" groups="pdk-cw-fs" />
+  <project path="external/expat" name="GR6737T_65_LE_N_SW1/platform/external/expat" groups="pdk" />
+  <project path="external/eyes-free" name="GR6737T_65_LE_N_SW1/platform/external/eyes-free" groups="pdk-cw-fs" />
+  <project path="external/f2fs-tools" name="GR6737T_65_LE_N_SW1/platform/external/f2fs-tools" groups="pdk" />
+  <project path="external/fdlibm" name="GR6737T_65_LE_N_SW1/platform/external/fdlibm" groups="pdk" />
+  <project path="external/fec" name="GR6737T_65_LE_N_SW1/platform/external/fec" />
+  <project path="external/fio" name="GR6737T_65_LE_N_SW1/platform/external/fio" />
+  <project path="external/flac" name="GR6737T_65_LE_N_SW1/platform/external/flac" groups="pdk" />
+  <project path="external/fonttools" name="GR6737T_65_LE_N_SW1/platform/external/fonttools" />
+  <project path="external/freetype" name="GR6737T_65_LE_N_SW1/platform/external/freetype" groups="pdk" />
+  <project path="external/fsck_msdos" name="GR6737T_65_LE_N_SW1/platform/external/fsck_msdos" groups="pdk-cw-fs" />
+  <project path="external/gemmlowp" name="GR6737T_65_LE_N_SW1/platform/external/gemmlowp" />
+  <project path="external/giflib" name="GR6737T_65_LE_N_SW1/platform/external/giflib" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/glide" name="GR6737T_65_LE_N_SW1/platform/external/glide" />
+  <project path="external/gmock" name="GR6737T_65_LE_N_SW1/platform/external/gmock" />
+  <project path="external/google-benchmark" name="GR6737T_65_LE_N_SW1/platform/external/google-benchmark" />
+  <project path="external/google-breakpad" name="GR6737T_65_LE_N_SW1/platform/external/google-breakpad" groups="pdk-cw-fs" />
+  <!-- <project path="external/google-diff-match-patch" name="GR6737T_65_LE_N_SW1/platform/external/google-diff-match-patch" groups="pdk-cw-fs" /> -->
+  <project path="external/google-fonts" name="GR6737T_65_LE_N_SW1/platform/external/google-fonts" groups="pdk-cw-fs" />
+  <project path="external/google-tv-pairing-protocol" name="GR6737T_65_LE_N_SW1/platform/external/google-tv-pairing-protocol" />
+  <project path="external/gptfdisk" name="GR6737T_65_LE_N_SW1/platform/external/gptfdisk" groups="pdk-cw-fs" />
+  <project path="external/gtest" name="GR6737T_65_LE_N_SW1/platform/external/gtest" groups="pdk" />
+  <project path="external/guava" name="GR6737T_65_LE_N_SW1/platform/external/guava" groups="pdk-cw-fs,tradefed" />
+  <project path="external/guice" name="GR6737T_65_LE_N_SW1/platform/external/guice" />
+  <project path="external/hamcrest" name="GR6737T_65_LE_N_SW1/platform/external/hamcrest" groups="pdk-cw-fs,tradefed" />
+  <project path="external/harfbuzz_ng" name="GR6737T_65_LE_N_SW1/platform/external/harfbuzz_ng" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/hyphenation-patterns" name="GR6737T_65_LE_N_SW1/platform/external/hyphenation-patterns" groups="pdk-cw-fs" />
+  <project path="external/icu" name="GR6737T_65_LE_N_SW1/platform/external/icu" groups="pdk" />
+  <project path="external/iproute2" name="GR6737T_65_LE_N_SW1/platform/external/iproute2" groups="pdk" />
+  <project path="external/ipsec-tools" name="GR6737T_65_LE_N_SW1/platform/external/ipsec-tools" groups="pdk-cw-fs" />
+  <project path="external/iptables" name="GR6737T_65_LE_N_SW1/platform/external/iptables" groups="pdk-cw-fs" />
+  <project path="external/iputils" name="GR6737T_65_LE_N_SW1/platform/external/iputils" groups="pdk-cw-fs" />
+  <project path="external/iw" name="GR6737T_65_LE_N_SW1/platform/external/iw" />
+  <project path="external/jacoco" name="GR6737T_65_LE_N_SW1/platform/external/jacoco" />
+  <project path="external/jarjar" name="GR6737T_65_LE_N_SW1/platform/external/jarjar" groups="pdk" />
+  <project path="external/javasqlite" name="GR6737T_65_LE_N_SW1/platform/external/javasqlite" groups="pdk-cw-fs" />
+  <project path="external/javassist" name="GR6737T_65_LE_N_SW1/platform/external/javassist" groups="pdk-cw-fs" />
+  <project path="external/jcommander" name="GR6737T_65_LE_N_SW1/platform/external/jcommander" />
+  <project path="external/jdiff" name="GR6737T_65_LE_N_SW1/platform/external/jdiff" groups="pdk-cw-fs" />
+  <project path="external/jemalloc" name="GR6737T_65_LE_N_SW1/platform/external/jemalloc" groups="pdk" />
+  <project path="external/jetty" name="GR6737T_65_LE_N_SW1/platform/external/jetty" groups="pdk" />
+  <project path="external/jhead" name="GR6737T_65_LE_N_SW1/platform/external/jhead" groups="pdk" />
+  <project path="external/jmdns" name="GR6737T_65_LE_N_SW1/platform/external/jmdns" groups="pdk-cw-fs" />
+  <project path="external/jsilver" name="GR6737T_65_LE_N_SW1/platform/external/jsilver" groups="pdk-cw-fs,tradefed" />
+  <project path="external/jsmn" name="GR6737T_65_LE_N_SW1/platform/external/jsmn" groups="pdk" />
+  <project path="external/jsoncpp" name="GR6737T_65_LE_N_SW1/platform/external/jsoncpp" groups="pdk-cw-fs" />
+  <project path="external/jsr305" name="GR6737T_65_LE_N_SW1/platform/external/jsr305" groups="pdk-cw-fs,tradefed" />
+  <project path="external/jsr330" name="GR6737T_65_LE_N_SW1/platform/external/jsr330" groups="pdk-cw-fs,tradefed" />
+  <project path="external/junit" name="GR6737T_65_LE_N_SW1/platform/external/junit" groups="pdk-cw-fs,tradefed" />
+  <project path="external/ksoap2" name="GR6737T_65_LE_N_SW1/platform/external/ksoap2" groups="pdk-cw-fs" />
+  <project path="external/kernel-headers" name="GR6737T_65_LE_N_SW1/platform/external/kernel-headers" groups="pdk-cw-fs" />
+  <project path="external/libavc" name="GR6737T_65_LE_N_SW1/platform/external/libavc" groups="pdk-cw-fs" />
+  <project path="external/libbrillo" name="GR6737T_65_LE_N_SW1/platform/external/libbrillo" />
+  <project path="external/libcap" name="GR6737T_65_LE_N_SW1/platform/external/libcap" />
+  <project path="external/libcap-ng" name="GR6737T_65_LE_N_SW1/platform/external/libcap-ng" groups="pdk-cw-fs" />
+  <project path="external/libchrome" name="GR6737T_65_LE_N_SW1/platform/external/libchrome" />
+  <project path="external/libcxx" name="GR6737T_65_LE_N_SW1/platform/external/libcxx" groups="pdk" />
+  <project path="external/libcxxabi" name="GR6737T_65_LE_N_SW1/platform/external/libcxxabi" groups="pdk" />
+  <project path="external/libdaemon" name="GR6737T_65_LE_N_SW1/platform/external/libdaemon" />
+  <project path="external/libdivsufsort" name="GR6737T_65_LE_N_SW1/platform/external/libdivsufsort" />
+  <project path="external/libdrm" name="GR6737T_65_LE_N_SW1/platform/external/libdrm" groups="pdk-cw-fs" />
+  <project path="external/libedit" name="GR6737T_65_LE_N_SW1/platform/external/libedit" />
+  <project path="external/libevent" name="GR6737T_65_LE_N_SW1/platform/external/libevent" />
+  <project path="external/libexif" name="GR6737T_65_LE_N_SW1/platform/external/libexif" groups="pdk-cw-fs" />
+  <project path="external/libgsm" name="GR6737T_65_LE_N_SW1/platform/external/libgsm" groups="pdk" />
+  <project path="external/libhevc" name="GR6737T_65_LE_N_SW1/platform/external/libhevc" />
+  <project path="external/libjpeg-turbo" name="GR6737T_65_LE_N_SW1/platform/external/libjpeg-turbo" />
+  <project path="external/liblzf" name="GR6737T_65_LE_N_SW1/platform/external/liblzf" groups="pdk" />
+  <project path="external/libmicrohttpd" name="GR6737T_65_LE_N_SW1/platform/external/libmicrohttpd" />
+  <project path="external/libmpeg2" name="GR6737T_65_LE_N_SW1/platform/external/libmpeg2" groups="pdk-cw-fs" />
+  <project path="external/libmtp" name="GR6737T_65_LE_N_SW1/platform/external/libmtp" groups="pdk-cw-fs" />
+  <project path="external/libnfc-nci" name="GR6737T_65_LE_N_SW1/platform/external/libnfc-nci" groups="pdk" />
+  <project path="external/libnfc-nxp" name="GR6737T_65_LE_N_SW1/platform/external/libnfc-nxp" groups="pdk" />
+  <project path="external/libnl" name="GR6737T_65_LE_N_SW1/platform/external/libnl" groups="pdk" />
+  <project path="external/libogg" name="GR6737T_65_LE_N_SW1/platform/external/libogg" groups="pdk" />
+  <project path="external/libopus" name="GR6737T_65_LE_N_SW1/platform/external/libopus" groups="pdk" />
+  <project path="external/libpcap" name="GR6737T_65_LE_N_SW1/platform/external/libpcap" groups="pdk,pdk-cw-fs" />
+  <project path="external/libphonenumber" name="GR6737T_65_LE_N_SW1/platform/external/libphonenumber" groups="pdk-cw-fs" />
+  <project path="external/libpng" name="GR6737T_65_LE_N_SW1/platform/external/libpng" groups="pdk" />
+  <project path="external/libselinux" name="GR6737T_65_LE_N_SW1/platform/external/libselinux" groups="pdk" />
+  <project path="external/libunwind" name="GR6737T_65_LE_N_SW1/platform/external/libunwind" groups="pdk" />
+  <project path="external/libunwind_llvm" name="GR6737T_65_LE_N_SW1/platform/external/libunwind_llvm" />
+  <project path="external/libusb" name="GR6737T_65_LE_N_SW1/platform/external/libusb" groups="pdk-cw-fs" />
+  <project path="external/libusb-compat" name="GR6737T_65_LE_N_SW1/platform/external/libusb-compat" groups="pdk-cw-fs" />
+  <project path="external/libutf" name="GR6737T_65_LE_N_SW1/platform/external/libutf" groups="pdk-cw-fs" />
+  <project path="external/libvncserver" name="GR6737T_65_LE_N_SW1/platform/external/libvncserver" groups="pdk-cw-fs" />
+  <project path="external/libvorbis" name="GR6737T_65_LE_N_SW1/platform/external/libvorbis" groups="pdk-cw-fs" />
+  <project path="external/libvpx" name="GR6737T_65_LE_N_SW1/platform/external/libvpx" groups="pdk" />
+  <project path="external/libvterm" name="GR6737T_65_LE_N_SW1/platform/external/libvterm" groups="pdk" />
+  <project path="external/libweave" name="GR6737T_65_LE_N_SW1/platform/external/libweave" />
+  <project path="external/libxml2" name="GR6737T_65_LE_N_SW1/platform/external/libxml2" groups="pdk-cw-fs" />
+  <project path="external/libyuv" name="GR6737T_65_LE_N_SW1/platform/external/libyuv" groups="libyuv,pdk-cw-fs" />
+  <project path="external/littlemock" name="GR6737T_65_LE_N_SW1/platform/external/littlemock" groups="pdk-cw-fs" />
+  <project path="external/lld" name="GR6737T_65_LE_N_SW1/platform/external/lld" groups="pdk-cw-fs" />
+  <project path="external/llvm" name="GR6737T_65_LE_N_SW1/platform/external/llvm" groups="pdk" />
+  <project path="external/ltrace" name="GR6737T_65_LE_N_SW1/platform/external/ltrace" groups="pdk-cw-fs" />
+  <project path="external/lz4" name="GR6737T_65_LE_N_SW1/platform/external/lz4" groups="pdk-cw-fs" />
+  <project path="external/lzma" name="GR6737T_65_LE_N_SW1/platform/external/lzma" groups="pdk" /> 	
+  <project path="external/markdown" name="GR6737T_65_LE_N_SW1/platform/external/markdown" groups="pdk-cw-fs" />
+  <project path="external/mdnsresponder" name="GR6737T_65_LE_N_SW1/platform/external/mdnsresponder" groups="pdk" />
+  <project path="external/mesa3d" name="GR6737T_65_LE_N_SW1/platform/external/mesa3d" groups="pdk-cw-fs" />
+  <project path="external/messageformat" name="GR6737T_65_LE_N_SW1/platform/external/messageformat" groups="pdk-cw-fs" />
+  <project path="external/minijail" name="GR6737T_65_LE_N_SW1/platform/external/minijail" />
+  <project path="external/mksh" name="GR6737T_65_LE_N_SW1/platform/external/mksh" groups="pdk" />
+  <project path="external/mmc-utils" name="GR6737T_65_LE_N_SW1/platform/external/mmc-utils" />
+  <project path="external/mockftpserver" name="GR6737T_65_LE_N_SW1/platform/external/mockftpserver" groups="pdk-cw-fs" />
+  <project path="external/mockito" name="GR6737T_65_LE_N_SW1/platform/external/mockito" groups="pdk-cw-fs" />
+  <project path="external/mockwebserver" name="GR6737T_65_LE_N_SW1/platform/external/mockwebserver" groups="pdk-cw-fs" />
+  <project path="external/modp_b64" name="GR6737T_65_LE_N_SW1/platform/external/modp_b64" />
+  <project path="external/mp4parser" name="GR6737T_65_LE_N_SW1/platform/external/mp4parser" groups="pdk-cw-fs" />
+  <project path="external/mtpd" name="GR6737T_65_LE_N_SW1/platform/external/mtpd" groups="pdk-cw-fs" />
+  <project path="external/nanohttpd" name="GR6737T_65_LE_N_SW1/platform/external/nanohttpd" />
+  <project path="external/nanopb-c" name="GR6737T_65_LE_N_SW1/platform/external/nanopb-c" />
+  <project path="external/naver-fonts" name="GR6737T_65_LE_N_SW1/platform/external/naver-fonts" groups="pdk-cw-fs" />
+  <project path="external/netcat" name="GR6737T_65_LE_N_SW1/platform/external/netcat" groups="pdk-cw-fs" />
+  <project path="external/netperf" name="GR6737T_65_LE_N_SW1/platform/external/netperf" groups="pdk-cw-fs" />
+  <project path="external/neven" name="GR6737T_65_LE_N_SW1/platform/external/neven" groups="pdk-cw-fs" />
+  <project path="external/nfacct" name="GR6737T_65_LE_N_SW1/platform/external/nfacct" groups="pdk-cw-fs" />
+  <project path="external/nist-pkits" name="GR6737T_65_LE_N_SW1/platform/external/nist-pkits" groups="pdk-cw-fs" />
+  <project path="external/nist-sip" name="GR6737T_65_LE_N_SW1/platform/external/nist-sip" groups="pdk-cw-fs" />
+  <project path="external/noto-fonts" name="GR6737T_65_LE_N_SW1/platform/external/noto-fonts" groups="pdk" />
+  <project path="external/oauth" name="GR6737T_65_LE_N_SW1/platform/external/oauth" groups="pdk-cw-fs" />
+  <project path="external/objenesis" name="GR6737T_65_LE_N_SW1/platform/external/objenesis" groups="pdk-cw-fs" />
+  <project path="external/okhttp" name="GR6737T_65_LE_N_SW1/platform/external/okhttp" groups="pdk-cw-fs" />
+  <project path="external/opencv" name="GR6737T_65_LE_N_SW1/platform/external/opencv" groups="pdk-cw-fs" />
+  <project path="external/opencv3" name="GR6737T_65_LE_N_SW1/platform/external/opencv3" groups="pdk-cw-fs" />
+  <project path="external/owasp/sanitizer" name="GR6737T_65_LE_N_SW1/platform/external/owasp/sanitizer" />
+  <project path="external/parameter-framework" name="GR6737T_65_LE_N_SW1/platform/external/parameter-framework" groups="pdk-cw-fs" />
+  <project path="external/pcre" name="GR6737T_65_LE_N_SW1/platform/external/pcre" groups="pdk" />
+  <project path="external/pdfium" name="GR6737T_65_LE_N_SW1/platform/external/pdfium" groups="pdk-cw-fs" />
+  <project path="external/piex" name="GR6737T_65_LE_N_SW1/platform/external/piex" groups="pdk-cw-fs" />
+  <project path="external/ppp" name="GR6737T_65_LE_N_SW1/platform/external/ppp" groups="pdk-cw-fs" />
+  <project path="external/proguard" name="GR6737T_65_LE_N_SW1/platform/external/proguard" groups="pdk-java,tradefed" />
+  <project path="external/protobuf" name="GR6737T_65_LE_N_SW1/platform/external/protobuf" groups="pdk" />
+  <project path="external/regex-re2" name="GR6737T_65_LE_N_SW1/platform/external/regex-re2" />
+  <project path="external/replicaisland" name="GR6737T_65_LE_N_SW1/platform/external/replicaisland" />
+  <project path="external/rmi4utils" name="GR6737T_65_LE_N_SW1/platform/external/rmi4utils"  />
+  <project path="external/robolectric" name="GR6737T_65_LE_N_SW1/platform/external/robolectric" groups="pdk-cw-fs" />
+  <project path="external/roboto-fonts" name="GR6737T_65_LE_N_SW1/platform/external/roboto-fonts" groups="pdk-cw-fs" />
+  <project path="external/rootdev" name="GR6737T_65_LE_N_SW1/platform/external/rootdev" groups="pdk" />
+  <project path="external/safe-iop" name="GR6737T_65_LE_N_SW1/platform/external/safe-iop" groups="pdk" />
+  <project path="external/scrypt" name="GR6737T_65_LE_N_SW1/platform/external/scrypt" groups="pdk" />
+  <project path="external/selinux" name="GR6737T_65_LE_N_SW1/platform/external/selinux" groups="pdk" />
+  <project path="external/sfntly" name="GR6737T_65_LE_N_SW1/platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/shflags" name="GR6737T_65_LE_N_SW1/platform/external/shflags" />
+  <project path="external/skia" name="GR6737T_65_LE_N_SW1/platform/external/skia" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/sl4a" name="GR6737T_65_LE_N_SW1/platform/external/sl4a" />
+  <project path="external/slf4j" name="GR6737T_65_LE_N_SW1/platform/external/slf4j" groups="pdk-cw-fs" />
+  <project path="external/smali" name="GR6737T_65_LE_N_SW1/platform/external/smali" groups="pdk-cw-fs" />
+  <project path="external/snakeyaml" name="GR6737T_65_LE_N_SW1/platform/external/snakeyaml" />
+  <project path="external/sonic" name="GR6737T_65_LE_N_SW1/platform/external/sonic" groups="pdk-cw-fs" />
+  <project path="external/sonivox" name="GR6737T_65_LE_N_SW1/platform/external/sonivox" groups="pdk" />
+  <project path="external/speex" name="GR6737T_65_LE_N_SW1/platform/external/speex" groups="pdk" />
+  <project path="external/sqlite" name="GR6737T_65_LE_N_SW1/platform/external/sqlite" groups="pdk" />
+  <project path="external/squashfs-tools" name="GR6737T_65_LE_N_SW1/platform/external/squashfs-tools" groups="pdk-cw-fs" />
+  <!-- <project path="external/srec" name="GR6737T_65_LE_N_SW1/platform/external/srec" groups="pdk-cw-fs" /> -->
+  <project path="external/srtp" name="GR6737T_65_LE_N_SW1/platform/external/srtp" groups="pdk-cw-fs" />
+  <!-- <project path="external/stlport" name="GR6737T_65_LE_N_SW1/platform/external/stlport" groups="pdk" /> -->
+  <project path="external/strace" name="GR6737T_65_LE_N_SW1/platform/external/strace" groups="pdk-cw-fs" />
+  <!-- <project path="external/stressapptest" name="GR6737T_65_LE_N_SW1/platform/external/stressapptest" groups="pdk-cw-fs" /> -->
+  <project path="external/svox" name="GR6737T_65_LE_N_SW1/platform/external/svox" groups="pdk-cw-fs" />
+  <project path="external/tagsoup" name="GR6737T_65_LE_N_SW1/platform/external/tagsoup" groups="pdk-cw-fs,tradefed" />
+  <project path="external/tcpdump" name="GR6737T_65_LE_N_SW1/platform/external/tcpdump" groups="pdk,pdk-cw-fs" />
+  <project path="external/testng" name="GR6737T_65_LE_N_SW1/platform/external/testng" />
+  <project path="external/timezonepicker-support" name="GR6737T_65_LE_N_SW1/platform/external/timezonepicker-support" groups="pdk-cw-fs" />
+  <project path="external/tinyalsa" name="GR6737T_65_LE_N_SW1/platform/external/tinyalsa" groups="pdk" />
+  <project path="external/tinycompress" name="GR6737T_65_LE_N_SW1/platform/external/tinycompress" groups="pdk" />
+  <project path="external/tinyxml" name="GR6737T_65_LE_N_SW1/platform/external/tinyxml" groups="pdk" />
+  <project path="external/tinyxml2" name="GR6737T_65_LE_N_SW1/platform/external/tinyxml2" groups="pdk" />
+  <project path="external/tlsdate" name="GR6737T_65_LE_N_SW1/platform/external/tlsdate" />
+  <project path="external/toybox" name="GR6737T_65_LE_N_SW1/platform/external/toybox" groups="pdk" />
+  <project path="external/tpm2" name="GR6737T_65_LE_N_SW1/platform/external/tpm2" />
+  <project path="external/tremolo" name="GR6737T_65_LE_N_SW1/platform/external/tremolo" groups="pdk" />
+  <project path="external/unicode" name="GR6737T_65_LE_N_SW1/platform/external/unicode" />
+  <project path="external/v8" name="GR6737T_65_LE_N_SW1/platform/external/v8" groups="pdk" />
+  <project path="external/valgrind" name="GR6737T_65_LE_N_SW1/platform/external/valgrind" groups="pdk" />
+  <project path="external/vboot_reference" name="GR6737T_65_LE_N_SW1/platform/external/vboot_reference" groups="pdk" />
+  <project path="external/vixl" name="GR6737T_65_LE_N_SW1/platform/external/vixl" groups="pdk" />
+  <project path="external/vogar" name="GR6737T_65_LE_N_SW1/platform/external/vogar" groups="pdk-cw-fs" />
+  <project path="external/vulkan-validation-layers" name="GR6737T_65_LE_N_SW1/platform/external/vulkan-validation-layers" />
+  <project path="external/webp" name="GR6737T_65_LE_N_SW1/platform/external/webp" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/webrtc" name="GR6737T_65_LE_N_SW1/platform/external/webrtc" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="GR6737T_65_LE_N_SW1/platform/external/wpa_supplicant_8" groups="pdk" />
+  <project path="external/xmlrpcpp" name="GR6737T_65_LE_N_SW1/platform/external/xmlrpcpp" />
+  <project path="external/xmlwriter" name="GR6737T_65_LE_N_SW1/platform/external/xmlwriter" groups="pdk-cw-fs" />
+  <project path="external/xmp_toolkit" name="GR6737T_65_LE_N_SW1/platform/external/xmp_toolkit" groups="pdk-cw-fs" />
+  <project path="external/zlib" name="GR6737T_65_LE_N_SW1/platform/external/zlib" groups="pdk" />
+  <project path="external/zopfli" name="GR6737T_65_LE_N_SW1/platform/external/zopfli" groups="pdk-cw-fs" />
+  <project path="external/zxing" name="GR6737T_65_LE_N_SW1/platform/external/zxing" groups="pdk-cw-fs" />
+  <project path="frameworks/av" name="GR6737T_65_LE_N_SW1/platform/frameworks/av" groups="pdk" />
+  <project path="frameworks/base" name="GR6737T_65_LE_N_SW1/platform/frameworks/base" groups="pdk-cw-fs" />
+  <project path="frameworks/compile" name="GR6737T_65_LE_N_SW1/platform/frameworks/compile" groups="pdk" />
+  <project path="frameworks/data-binding" name="GR6737T_65_LE_N_SW1/platform/frameworks/data-binding" groups="pdk-cw-fs" />
+  <project path="frameworks/ex" name="GR6737T_65_LE_N_SW1/platform/frameworks/ex" groups="pdk-cw-fs" />
+  <project path="frameworks/minikin" name="GR6737T_65_LE_N_SW1/platform/frameworks/minikin" groups="pdk-cw-fs" />
+  <project path="frameworks/ml" name="GR6737T_65_LE_N_SW1/platform/frameworks/ml" groups="pdk-cw-fs" />
+  <project path="frameworks/multidex" name="GR6737T_65_LE_N_SW1/platform/frameworks/multidex" groups="pdk-cw-fs" />
+  <project path="frameworks/native" name="GR6737T_65_LE_N_SW1/platform/frameworks/native" groups="pdk" />
+  <project path="frameworks/opt/bitmap" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/bitmap" />
+  <project path="frameworks/opt/bluetooth" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/calendar" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/chips" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/chips" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/colorpicker" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/colorpicker" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/datetimepicker" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/emoji" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/emoji" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/inputconnectioncommon" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/inputconnectioncommon" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/inputmethodcommon" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs" />
+  <!-- <project path="frameworks/opt/mms" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/mms" groups="pdk-cw-fs" /> -->
+  <project path="frameworks/opt/net/ims" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" />
+  <project path="frameworks/opt/net/voip" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/net/voip" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/net/wifi" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/net/wifi" groups="pdk" />
+  <project path="frameworks/opt/net/ethernet" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/net/ethernet" />
+  <project path="frameworks/opt/photoviewer" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/setupwizard" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
+  <!-- <project path="frameworks/opt/tedongle" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/tedongle" groups="pdk-cw-fs" /> -->
+  <project path="frameworks/opt/telephony" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/telephony" groups="pdk" />
+  <project path="frameworks/opt/timezonepicker" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/vcard" name="GR6737T_65_LE_N_SW1/platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
+  <project path="frameworks/rs" name="GR6737T_65_LE_N_SW1/platform/frameworks/rs" groups="pdk" />
+  <project path="frameworks/support" name="GR6737T_65_LE_N_SW1/platform/frameworks/support" groups="pdk-cw-fs" />
+  <!-- project path="frameworks/testing" name="GR6737T_65_LE_N_SW1/platform/frameworks/testing" groups="pdk-cw-fs" / -->
+  <!-- project path="frameworks/uiautomator" name="GR6737T_65_LE_N_SW1/platform/frameworks/uiautomator" groups="pdk-cw-fs" / -->
+  <project path="frameworks/volley" name="GR6737T_65_LE_N_SW1/platform/frameworks/volley" groups="pdk-cw-fs" />
+  <project path="frameworks/webview" name="GR6737T_65_LE_N_SW1/platform/frameworks/webview" groups="pdk-cw-fs" />
+  <project path="frameworks/wilhelm" name="GR6737T_65_LE_N_SW1/platform/frameworks/wilhelm" groups="pdk-cw-fs" />
+  <project path="hardware/akm" name="GR6737T_65_LE_N_SW1/platform/hardware/akm" />
+  <project path="hardware/broadcom" name="GR6737T_65_LE_N_SW1/platform/hardware/broadcom" />
+  <project path="hardware/bsp" name="GR6737T_65_LE_N_SW1/platform/hardware/bsp" />
+  <project path="hardware/google" name="GR6737T_65_LE_N_SW1/platform/hardware/google" />
+  <project path="hardware/intel" name="GR6737T_65_LE_N_SW1/platform/hardware/intel" groups="intel" />
+  <project path="hardware/invensense" name="GR6737T_65_LE_N_SW1/platform/hardware/invensense" groups="invensense" />
+  <project path="hardware/libhardware" name="GR6737T_65_LE_N_SW1/platform/hardware/libhardware" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="GR6737T_65_LE_N_SW1/platform/hardware/libhardware_legacy" groups="pdk" />
+  <!-- <project path="hardware/mediatek" name="GR6737T_65_LE_N_SW1/platform/hardware/mediatek" groups="pdk" /> -->
+  <project path="hardware/marvell" name="GR6737T_65_LE_N_SW1/platform/hardware/marvell" />
+  <!-- <project path="hardware/nvidia" name="GR6737T_65_LE_N_SW1/platform/hardware/nvidia" /> -->
+  <project path="hardware/qcom" name="GR6737T_65_LE_N_SW1/platform/hardware/qcom" />
+  <project path="hardware/ril" name="GR6737T_65_LE_N_SW1/platform/hardware/ril" groups="pdk" />
+  <!-- <project path="hardware/samsung_slsi/exynos5" name="GR6737T_65_LE_N_SW1/platform/hardware/samsung_slsi/exynos5" groups="exynos5" />-->
+  <project path="hardware/ti" name="GR6737T_65_LE_N_SW1/platform/hardware/ti" />
+  <project path="kernel-3.18" name="GR6737T_65_LE_N_SW1/platform/kernel-3.18" />
+  <project path="libcore" name="GR6737T_65_LE_N_SW1/platform/libcore" groups="pdk" />
+  <project path="libnativehelper" name="GR6737T_65_LE_N_SW1/platform/libnativehelper" groups="pdk" />
+  <!-- <project path="md32" name="GR6737T_65_LE_N_SW1/platform/md32" /> -->
+  <project path="ndk" name="GR6737T_65_LE_N_SW1/platform/ndk" />
+  <project path="packages/apps/BasicSmsReceiver" name="GR6737T_65_LE_N_SW1/platform/packages/apps/BasicSmsReceiver" />
+  <project path="packages/apps/Bluetooth" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Bluetooth" groups="pdk-cw-fs" />
+  <project path="packages/apps/Browser2" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Browser2" />
+  <project path="packages/apps/Calculator" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Calculator" />
+  <project path="packages/apps/Calendar" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Calendar" />
+  <project path="packages/apps/Camera2" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Camera2" />
+  <project path="packages/apps/CarrierConfig" name="GR6737T_65_LE_N_SW1/platform/packages/apps/CarrierConfig" />
+  <project path="packages/apps/CellBroadcastReceiver" name="GR6737T_65_LE_N_SW1/platform/packages/apps/CellBroadcastReceiver" />
+  <project path="packages/apps/CertInstaller" name="GR6737T_65_LE_N_SW1/platform/packages/apps/CertInstaller" groups="pdk-cw-fs" />
+  <project path="packages/apps/Contacts" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Contacts" />
+  <project path="packages/apps/ContactsCommon" name="GR6737T_65_LE_N_SW1/platform/packages/apps/ContactsCommon" />
+  <project path="packages/apps/DeskClock" name="GR6737T_65_LE_N_SW1/platform/packages/apps/DeskClock" />
+  <project path="packages/apps/DevCamera" name="GR6737T_65_LE_N_SW1/platform/packages/apps/DevCamera" />
+  <project path="packages/apps/Dialer" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Dialer" />
+  <project path="packages/apps/Email" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Email" />
+  <project path="packages/apps/EmergencyInfo" name="GR6737T_65_LE_N_SW1/platform/packages/apps/EmergencyInfo" />
+  <project path="packages/apps/ExactCalculator" name="GR6737T_65_LE_N_SW1/platform/packages/apps/ExactCalculator" />
+  <project path="packages/apps/Gallery" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Gallery" />
+  <project path="packages/apps/Gallery2" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Gallery2" />
+  <project path="packages/apps/HTMLViewer" name="GR6737T_65_LE_N_SW1/platform/packages/apps/HTMLViewer" />
+  <project path="packages/apps/KeyChain" name="GR6737T_65_LE_N_SW1/platform/packages/apps/KeyChain" />
+  <project path="packages/apps/Launcher2" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Launcher2" />
+  <project path="packages/apps/Launcher3" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Launcher3" />
+  <project path="packages/apps/LegacyCamera" name="GR6737T_65_LE_N_SW1/platform/packages/apps/LegacyCamera" />
+  <project path="packages/apps/ManagedProvisioning" name="GR6737T_65_LE_N_SW1/platform/packages/apps/ManagedProvisioning" />
+  <!-- <project path="packages/apps/Mms" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Mms" /> -->
+  <project path="packages/apps/Messaging" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Messaging" />
+  <project path="packages/apps/Music" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Music" />
+  <project path="packages/apps/MusicFX" name="GR6737T_65_LE_N_SW1/platform/packages/apps/MusicFX" />
+  <project path="packages/apps/Nfc" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Nfc" />
+  <!-- <project path="packages/apps/OMA-DM" name="GR6737T_65_LE_N_SW1/platform/packages/apps/OMA-DM" /> -->
+  <project path="packages/apps/OneTimeInitializer" name="GR6737T_65_LE_N_SW1/platform/packages/apps/OneTimeInitializer" />
+  <project path="packages/apps/PackageInstaller" name="GR6737T_65_LE_N_SW1/platform/packages/apps/PackageInstaller" />
+  <project path="packages/apps/Phone" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Phone" />
+  <project path="packages/apps/PhoneCommon" name="GR6737T_65_LE_N_SW1/platform/packages/apps/PhoneCommon" />
+  <project path="packages/apps/Protips" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Protips" />
+  <project path="packages/apps/Provision" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Provision" />
+  <project path="packages/apps/QuickSearchBox" name="GR6737T_65_LE_N_SW1/platform/packages/apps/QuickSearchBox" />
+  <project path="packages/apps/Settings" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Settings" />
+  <!--<project path="packages/apps/SmartCardService" name="GR6737T_65_LE_N_SW1/platform/packages/apps/SmartCardService" />-->
+  <project path="packages/apps/SoundRecorder" name="GR6737T_65_LE_N_SW1/platform/packages/apps/SoundRecorder" />
+  <project path="packages/apps/SpareParts" name="GR6737T_65_LE_N_SW1/platform/packages/apps/SpareParts" />
+  <project path="packages/apps/SpeechRecorder" name="GR6737T_65_LE_N_SW1/platform/packages/apps/SpeechRecorder" />
+  <project path="packages/apps/Stk" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Stk" />
+  <project path="packages/apps/Tag" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Tag" />
+  <project path="packages/apps/Terminal" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Terminal" />
+  <project path="packages/apps/Test" name="GR6737T_65_LE_N_SW1/platform/packages/apps/Test" />
+  <project path="packages/apps/TvSettings" name="GR6737T_65_LE_N_SW1/platform/packages/apps/TvSettings" />
+  <project path="packages/experimental" name="GR6737T_65_LE_N_SW1/platform/packages/experimental" />
+  <project path="packages/inputmethods/LatinIME" name="GR6737T_65_LE_N_SW1/platform/packages/inputmethods/LatinIME" />
+  <project path="packages/inputmethods/OpenWnn" name="GR6737T_65_LE_N_SW1/platform/packages/inputmethods/OpenWnn" />
+  <project path="packages/providers/ApplicationsProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/ApplicationsProvider" />
+  <project path="packages/providers/BlockedNumberProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/BlockedNumberProvider" />
+  <project path="packages/providers/BookmarkProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/BookmarkProvider" />
+  <project path="packages/providers/CalendarProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" />
+  <project path="packages/providers/CallLogProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/CallLogProvider" />
+  <project path="packages/providers/ContactsProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/ContactsProvider" groups="pdk-cw-fs" />
+  <project path="packages/providers/DownloadProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/DownloadProvider" groups="pdk-cw-fs" />
+  <project path="packages/providers/MediaProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/MediaProvider" groups="pdk-cw-fs" />
+  <project path="packages/providers/PartnerBookmarksProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/PartnerBookmarksProvider" />
+  <project path="packages/providers/TelephonyProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/TelephonyProvider" />
+  <project path="packages/providers/TvProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/TvProvider" />
+  <project path="packages/providers/UserDictionaryProvider" name="GR6737T_65_LE_N_SW1/platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs" />
+  <project path="packages/screensavers/Basic" name="GR6737T_65_LE_N_SW1/platform/packages/screensavers/Basic" />
+  <project path="packages/screensavers/PhotoTable" name="GR6737T_65_LE_N_SW1/platform/packages/screensavers/PhotoTable" />
+  <project path="packages/screensavers/WebView" name="GR6737T_65_LE_N_SW1/platform/packages/screensavers/WebView" />
+  <project path="packages/services/Car" name="GR6737T_65_LE_N_SW1/platform/packages/services/Car" />
+  <project path="packages/services/Mms" name="GR6737T_65_LE_N_SW1/platform/packages/services/Mms" />
+  <project path="packages/services/Telecomm" name="GR6737T_65_LE_N_SW1/platform/packages/services/Telecomm" />
+  <project path="packages/services/Telephony" name="GR6737T_65_LE_N_SW1/platform/packages/services/Telephony" />
+  <project path="packages/wallpapers/LivePicker" name="GR6737T_65_LE_N_SW1/platform/packages/wallpapers/LivePicker" />
+  <project path="pdk" name="GR6737T_65_LE_N_SW1/platform/pdk" groups="pdk" />
+  <project path="platform_testing" name="GR6737T_65_LE_N_SW1/platform/platform_testing" />  
+  <project path="prebuilts/android-emulator" name="GR6737T_65_LE_N_SW1/platform/prebuilts/android-emulator" clone-depth="1" />
+  <project path="prebuilts/clang/darwin-x86" name="GR6737T_65_LE_N_SW1/platform/prebuilts/clang/darwin-x86" groups="pdk,darwin" />
+  <project path="prebuilts/clang/host" name="GR6737T_65_LE_N_SW1/platform/prebuilts/clang/host" groups="pdk,darwin" />
+  <project path="prebuilts/clang/linux-x86" name="GR6737T_65_LE_N_SW1/platform/prebuilts/clang/linux-x86" groups="pdk,linux" />
+  <project path="prebuilts/deqp" name="GR6737T_65_LE_N_SW1/platform/prebuilts/deqp" />
+  <project path="prebuilts/devtools" name="GR6737T_65_LE_N_SW1/platform/prebuilts/devtools" />
+  <project path="prebuilts/eclipse" name="GR6737T_65_LE_N_SW1/platform/prebuilts/eclipse" groups="pdk" />
+  <project path="prebuilts/gcc/darwin-x86" name="GR6737T_65_LE_N_SW1/platform/prebuilts/gcc/darwin-x86" groups="pdk,darwin" />
+  <project path="prebuilts/gcc/linux-x86" name="GR6737T_65_LE_N_SW1/platform/prebuilts/gcc/linux-x86" groups="pdk,linux" />
+  <project path="prebuilts/gdb/darwin-x86" name="GR6737T_65_LE_N_SW1/platform/prebuilts/gdb/darwin-x86" groups="pdk,darwin" />
+  <project path="prebuilts/gdb/linux-x86" name="GR6737T_65_LE_N_SW1/platform/prebuilts/gdb/linux-x86" groups="pdk,linux" />
+  <project path="prebuilts/go/darwin-x86" name="GR6737T_65_LE_N_SW1/platform/prebuilts/go/darwin-x86" groups="pdk,darwin" />
+  <project path="prebuilts/go/linux-x86" name="GR6737T_65_LE_N_SW1/platform/prebuilts/go/linux-x86" groups="pdk,linux" />
+  <project path="prebuilts/gradle-plugin" name="GR6737T_65_LE_N_SW1/platform/prebuilts/gradle-plugin" groups="pdk-cw-fs" />
+  <project path="prebuilts/libs/libedit" name="GR6737T_65_LE_N_SW1/platform/prebuilts/libs/libedit" groups="pdk-cw-fs" />
+  <project path="prebuilts/maven_repo/android" name="GR6737T_65_LE_N_SW1/platform/prebuilts/maven_repo/android" groups="pdk-cw-fs" />
+  <project path="prebuilts/misc" name="GR6737T_65_LE_N_SW1/platform/prebuilts/misc" groups="pdk,tradefed" />
+  <project path="prebuilts/ndk" name="GR6737T_65_LE_N_SW1/platform/prebuilts/ndk" groups="pdk" />
+  <project path="prebuilts/ninja" name="GR6737T_65_LE_N_SW1/platform/prebuilts/ninja" />
+  <project path="prebuilts/python" name="GR6737T_65_LE_N_SW1/platform/prebuilts/python" />
+  <project path="prebuilts/qemu-kernel" name="GR6737T_65_LE_N_SW1/platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
+  <!-- project path="prebuilts/runtime" name="GR6737T_65_LE_N_SW1/platform/prebuilts/runtime" groups="pdk" clone-depth="1" / -->
+  <project path="prebuilts/sdk" name="GR6737T_65_LE_N_SW1/platform/prebuilts/sdk" groups="pdk,tradefed" />
+  <project path="prebuilts/tools" name="GR6737T_65_LE_N_SW1/platform/prebuilts/tools" groups="pdk,tools" />
+  <project path="sdk" name="GR6737T_65_LE_N_SW1/platform/sdk" groups="pdk-cw-fs" />
+  <project path="system/bt" name="GR6737T_65_LE_N_SW1/platform/system/bt" groups="pdk" />
+  <project path="system/ca-certificates" name="GR6737T_65_LE_N_SW1/platform/system/ca-certificates" groups="pdk" />
+  <project path="system/connectivity" name="GR6737T_65_LE_N_SW1/platform/system/connectivity" groups="pdk" />
+  <project path="system/core" name="GR6737T_65_LE_N_SW1/platform/system/core" groups="pdk" />
+  <project path="system/extras" name="GR6737T_65_LE_N_SW1/platform/system/extras" groups="pdk" />
+  <project path="system/firewalld" name="GR6737T_65_LE_N_SW1/platform/system/firewalld" groups="pdk" />
+  <project path="system/gatekeeper" name="GR6737T_65_LE_N_SW1/platform/system/gatekeeper" groups="pdk" />
+  <project path="system/keymaster" name="GR6737T_65_LE_N_SW1/platform/system/keymaster" groups="pdk" />
+  <project path="system/media" name="GR6737T_65_LE_N_SW1/platform/system/media" groups="pdk" />
+  <project path="system/nativepower" name="GR6737T_65_LE_N_SW1/platform/system/nativepower" groups="pdk" />
+  <project path="system/netd" name="GR6737T_65_LE_N_SW1/platform/system/netd" groups="pdk" />
+  <project path="system/nvram" name="GR6737T_65_LE_N_SW1/platform/system/nvram" groups="pdk" />
+  <project path="system/security" name="GR6737T_65_LE_N_SW1/platform/system/security" groups="pdk" />
+  <project path="system/sepolicy" name="GR6737T_65_LE_N_SW1/platform/system/sepolicy" groups="pdk" />
+  <project path="system/tools" name="GR6737T_65_LE_N_SW1/platform/system/tools" groups="pdk" />
+  <project path="system/tpm" name="GR6737T_65_LE_N_SW1/platform/system/tpm" groups="pdk" />
+  <project path="system/update_engine" name="GR6737T_65_LE_N_SW1/platform/system/update_engine" groups="pdk" />
+  <project path="system/vold" name="GR6737T_65_LE_N_SW1/platform/system/vold" groups="pdk" />
+  <project path="system/weaved" name="GR6737T_65_LE_N_SW1/platform/system/weaved" groups="pdk" />
+  <project path="system/webservd" name="GR6737T_65_LE_N_SW1/platform/system/webservd" groups="pdk" />
+  <project path="toolchain" name="GR6737T_65_LE_N_SW1/platform/toolchain" />
+  <!-- project path="tools/base" name="GR6737T_65_LE_N_SW1/platform/tools/base" groups="notdefault,tools" / -->
+  <project path="tools/external" name="GR6737T_65_LE_N_SW1/platform/tools/external" groups="tools" />
+  <project path="tools/test" name="GR6737T_65_LE_N_SW1/platform/tools/test" groups="tools" />
+  <!-- project path="tools/swt" name="GR6737T_65_LE_N_SW1/platform/tools/swt" groups="notdefault,tools" / -->
+  <project path="trusty" name="GR6737T_65_LE_N_SW1/platform/trusty" />
+  <project path="vendor" name="GR6737T_65_LE_N_SW1/platform/vendor" />
+
+</manifest>
