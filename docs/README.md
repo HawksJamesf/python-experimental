@@ -8,7 +8,7 @@
 python:
 -  [A Byte of Python](https://python.swaroopch.com/)(英文)
 
-A Byte of Python的[离线文件](/byte-of-python.pdf)
+A Byte of Python的[中文离线文件](/byte-of-python-chinese-edition.pdf)
 
 - [廖峰峰python教程](https://www.liaoxuefeng.com/wiki/1016959663602400I)(中文)
 
