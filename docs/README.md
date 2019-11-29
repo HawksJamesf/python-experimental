@@ -15,4 +15,5 @@ A Byte of Python的[中文离线文件](/byte-of-python-chinese-edition.pdf)
 ## [视频](https://space.bilibili.com/2239403/favlist?fid=713278603&ftype=create)
 
 [[MIT] 计算机科学导论和python编程 (双语字幕) Programming in Python](https://space.bilibili.com/2239403/favlist?fid=713278603&ftype=create)(英文)
+
 [黑马程序员 - python就业班后续教程 ( 实时更新 )](https://space.bilibili.com/2239403/favlist?fid=713278603&ftype=create)
